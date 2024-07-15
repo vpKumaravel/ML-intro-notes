@@ -14,8 +14,7 @@ df = pd.DataFrame(data)
 bins = [0, 18, 35, 50, 65, 100]
 labels = ['0-18', '19-35', '36-50', '51-65', '66-100']
 df['Age_Group'] = pd.cut(df['Age'], bins=bins, labels=labels)
-
-'''
+```
 
 ## Reference
 
@@ -29,3 +28,4 @@ df['Age_Group'] = pd.cut(df['Age'], bins=bins, labels=labels)
   author = {Kubat, Miroslav},
   year = {2015}
 }
+```

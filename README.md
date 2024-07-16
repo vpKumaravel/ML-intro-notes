@@ -73,6 +73,8 @@ Here, the tricky part is computing the likelihood of an evidence E being in the 
 To do this, we need to assume the distribution of all samples X for each class C. Naive Bayes model assumes that each attribute (features) are independent, therefore, 
 
 \[ P(X|C) = \prod_{i=1}^{n} P(X_i|C) \]
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;P(X|C)&space;=&space;\prod_{i=1}^{n}&space;P(X_i|C)" title="P(X|C) = \prod_{i=1}^{n} P(X_i|C)" />
+
 
 However, this assumption of attributes being independent is not always true (e.g., when the weight of an object grows, its size grows, too). In such cases, considering Gaussian (bell curve) distribution or Bernoulli distribution for the data might be reasonable.
 

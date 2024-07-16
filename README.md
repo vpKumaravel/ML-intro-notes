@@ -33,11 +33,12 @@ Chapter 2 starts with basic definitions for prior probability, conditional proba
 
 The conditional probability of event \( A \) given that event \( B \) has occurred is denoted as \( P(A|B) \). It is defined by the formula:
 
-\[ P(A|B) = \frac{P(A \cap B)}{P(B)} \]
+![Conditional Probability](https://latex.codecogs.com/svg.latex?\Large%20P(A|B)%20=%20\frac{P(A%20\cap%20B)}{P(B)})
 
-where:
-- \( P(A \cap B) \) is the joint probability of both events \( A \) and \( B \) occurring.
-- \( P(B) \) is the probability of event \( B \).
+Where:
+- \( P(A|B) \) is the **conditional probability**: the probability of event \( A \) given that event \( B \) has occurred.
+- \( P(A \cap B) \) is the **joint probability**: the probability of both events \( A \) and \( B \) occurring.
+- \( P(B) \) is the **marginal probability**: the probability of event \( B \) occurring.
 
 - **Joint probability** refers to the probability of two events occurring simultaneously. It is the likelihood of both events \( A \) and \( B \) happening at the same time.
 
@@ -55,7 +56,7 @@ Bayes' Theorem is used to update the probability estimate for a hypothesis based
 
 ### Formula
 
-\[ P(H|E) = \frac{P(E|H) \cdot P(H)}{P(E)} \]
+![Bayes' Theorem](https://latex.codecogs.com/svg.latex?\Large%20P(H|E)%20=%20\frac{P(E|H)%20\cdot%20P(H)}{P(E)})
 
 Where:
 - \( P(H|E) \) is the **posterior probability**: the probability of hypothesis \( H \) given the evidence \( E \).
@@ -72,7 +73,6 @@ Where:
 Here, the tricky part is computing the likelihood of an evidence E being in the Hypothesis H. (the likelihood of a sample x being in the class C).
 To do this, we need to assume the distribution of all samples X for each class C. Naive Bayes model assumes that each attribute (features) are independent, therefore, 
 
-\[ P(X|C) = \prod_{i=1}^{n} P(X_i|C) \]
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;P(X|C)&space;=&space;\prod_{i=1}^{n}&space;P(X_i|C)" title="P(X|C) = \prod_{i=1}^{n} P(X_i|C)" />
 
 

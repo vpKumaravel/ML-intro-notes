@@ -78,7 +78,20 @@ To do this, we need to assume the distribution of all samples X for each class C
 
 However, this assumption of attributes being independent is not always true (e.g., when the weight of an object grows, its size grows, too). In such cases, considering Gaussian (bell curve) distribution or Bernoulli distribution for the data might be reasonable.
 
-### 
+## Chapter 3 - Similarities: Nearest-Neighbor Classifiers
+
+Rather than real objects such as a cat or a dog, the ML classifier looks for similarities in the attributes to make a prediction. If two instances/samples are close to each other in terms of, say, Euclidean distance, they more likely belong to the same class of objects. Having a single neighbor to decide can be sensitive to noise. To make the classifier more robust, we go for _k_ nearest neighbors. For a binary class problem, _k_ can be an odd number (e.g., 3) to avoid ties.
+
+Objects are similar if the geometric distance between the vectors describing them is small.
+
+### Measuring similarity
+
+An option is to use Euclidean distance. Hamming distance is useful when dealing with Boolean domains. When you have mixed continuous and discrete attributes, care must be given to avoid issues like _scaling_, which will be described in detail using two concepts:
+
+- Irrelevant Attributes: It is crucial to consider how the object is represented in the vector space. Not all attributes are equally important. Some might be _irrelevant_. However, such attributes can influence the geometric distance.
+- Scale of Attributes: Large range of values of one of the attributes can become a dominating factor. So, it is essential to normalize the values to be in the range [0,1]
+
+However, a potential downside of normalization is that the values falling between 0 and 1 may not be justified for some attributes. It requires little experimentation along with domain insights.
 
 ## Reference
 
